@@ -1,0 +1,72 @@
+package two_classes;
+
+
+public class area {
+    private float r,base,height;
+   
+    
+    public float triangle (float l,float w)
+    {
+    base=l;
+    height=w;
+    return (base*height)/2;
+    }
+    public double circle (float x)
+    {
+    r=x;
+    return (r*r*3.14);
+    
+    }
+    
+}
+
+package two_classes;
+
+
+public class circumference {
+   private float r,length1,length2,length3;
+   public float triangle (float a,float b,float c)
+    {
+    length1=a;
+    length2=b;
+    length3=c;
+    return length1+length2+length3;
+    }
+    public double circle (float x)
+    {
+    r=x;
+    return (2*r*3.14);
+    
+    }
+    
+}
+
+
+package two_classes;
+
+import java.util.Scanner;
+public class Two_classes {
+
+    
+    public static void main(String[] args) {
+        float r=0,l1=0,l2=0,l3=0,b,h;
+        Scanner input=new Scanner(System.in);
+        area r1=new area();
+        circumference r2=new circumference();
+        System.out.println("enter the 3 length of the triangle to get circumference ");
+        l1=input.nextFloat();
+        l2=input.nextFloat();
+        l3=input.nextFloat();
+        System.out.println("the circumference = "+r2.triangle(l1,l2,l3));
+        System.out.println("enter the base and height of the triangle to get area ");
+        b=input.nextFloat();
+        h=input.nextFloat();
+        System.out.println("the circumference = "+r1.triangle(b,h));
+        System.out.println("enter the radius of the circle ");
+        r=input.nextFloat();
+        System.out.println("the circumference of circle "+r2.circle(r));
+        System.out.println("the area of circle "+r1.circle(r));
+        
+    }
+    
+}
