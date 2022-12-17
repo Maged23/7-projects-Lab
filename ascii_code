@@ -1,0 +1,14 @@
+package ascii_code;
+import java.util.Scanner;
+
+public class Ascii_code {   
+    public static void main(String[] args) {
+        
+        int s;
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the ascii code ");
+        s=input.nextInt();
+        System.out.println("the character is: "+((char)s));                                        
+    }
+    
+}
