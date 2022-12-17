@@ -1,0 +1,15 @@
+package string_comma;
+
+import java.util.Scanner;
+public class String_comma {
+
+    
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the string ");
+          String s =input.next() ;
+        s = s.replace(",","");
+        System.out.println(s);                        
+    }
+    
+}
